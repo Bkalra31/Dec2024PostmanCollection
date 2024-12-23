@@ -1,0 +1,49 @@
+{
+	"info": {
+		"_postman_id": "8dcc363a-f5d9-4adb-a64e-c983885dac47",
+		"name": "FileUpload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "732190"
+	},
+	"item": [
+		{
+			"name": "fileupload",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Personal_Data/Naveen_API_Course_2024/Postman_Collections_Latest_2024/sample-file.txt"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{fileurl}}/post",
+					"host": [
+						"{{fileurl}}"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
