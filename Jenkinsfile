@@ -16,6 +16,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
+                git credentialsId: '2d465988-eb7c-448d-bebf-506bc8e586c9',
                 git url: 'https://github.com/Bkalra31/Dec2024PostmanCollection'
             }
         }
