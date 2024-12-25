@@ -2,7 +2,7 @@ pipeline {
     agent any
     stages {
 
-        stage('Build') {
+        stage('Build') {    
             steps {
                 echo("build the war")
             }
@@ -16,7 +16,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/naveenanimation20/July2024PostmanCollections'
+                git url: 'https://github.com/Bkalra31/Dec2024PostmanCollection'
             }
         }
         stage('Run api test cases') {
